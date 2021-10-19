@@ -1,6 +1,6 @@
 # projects
 
-## 1. First Project
+## First Project
 - title
   - "SngyBab3"
 - description
