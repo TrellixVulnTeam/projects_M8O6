@@ -1,48 +1,18 @@
-.pd-l-10 {
-  padding-left: 10px;
-}
-
-.pd-10 {
-  padding: 10px;
-}
-
-h2 {
+h2, h3 {
   font-weight: bold;
 }
 
-ion-chip {
-  height: 25px;
+h5 {
+  color: #111111;
+  font-size: 13px;
+  padding-bottom: 1px;
 }
 
-.state1 {
-  width: 50px;
-}
-
-.state2 {
-  width: 75px;
-}
-
-ion-icon {
-  color: #002f67;
-  font-size: 30px;
-}
-
-// background-color
 ion-content {
-  background: gray;
-  background-color: gray;
-  --ion-background-color: gray;
-}
-#background-content {
-  background: gray;
-  background-color: gray;
-}
-.bg {
-  background: gray;
-  background-color: gray;
+  --ion-background-color: #DAE0E9;
 }
 
-.card {
+ion-card {
   margin: 15px;
   padding-bottom: 10px;
   border-radius: 15px;
@@ -50,10 +20,68 @@ ion-content {
   --ion-background-color: white;
 }
 
-.list {
+ion-list {
   padding: 10px;
 }
 
-.item {
+ion-list-header {
+  height: 40px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+ion-label {
+  margin: 0;
+  padding: 0;
+}
+
+ion-chip {
+  height: 25px;
+}
+
+// button 여백
+// 오른쪽에 붙이기
+ion-button {
+  margin: 0;
+  padding: 0;
+}
+
+ion-icon {
+  color: #002f67;
+  font-size: 25px !important;
+}
+
+#card1 {
+  height: 720px;
+}
+
+#card1 ion-item {
   margin: 10px;
+}
+
+#card1 #menu {
+  font-size: 14px;
+  align-items: normal;
+}
+
+#card2 {
+  height: 60px;
+  padding-left: 15px;
+}
+
+#card2 ion-item {
+  width: 310px;
+  float: left;
+}
+
+#card2 ion-button {
+  margin-top: 15px;
+}
+
+#state1 {
+  width: 50px;
+}
+
+#state2 {
+  width: 75px;
 }
