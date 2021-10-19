@@ -1,0 +1,59 @@
+.pd-l-10 {
+  padding-left: 10px;
+}
+
+.pd-10 {
+  padding: 10px;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+ion-chip {
+  height: 25px;
+}
+
+.state1 {
+  width: 50px;
+}
+
+.state2 {
+  width: 75px;
+}
+
+ion-icon {
+  color: #002f67;
+  font-size: 30px;
+}
+
+// background-color
+ion-content {
+  background: gray;
+  background-color: gray;
+  --ion-background-color: gray;
+}
+#background-content {
+  background: gray;
+  background-color: gray;
+}
+.bg {
+  background: gray;
+  background-color: gray;
+}
+
+.card {
+  margin: 15px;
+  padding-bottom: 10px;
+  border-radius: 15px;
+  overflow: hidden;
+  --ion-background-color: white;
+}
+
+.list {
+  padding: 10px;
+}
+
+.item {
+  margin: 10px;
+}
