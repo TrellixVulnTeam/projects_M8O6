@@ -1,11 +1,4 @@
-<!--<ion-header [translucent]="true">-->
-<!--  <ion-toolbar>-->
-<!--    <ion-title>-->
-<!--      SNGY 밥밥밥-->
-<!--    </ion-title>-->
-<!--  </ion-toolbar>-->
-<!--</ion-header>-->
-
+<!---->
 <ion-content [fullscreen]="true">
 
   <ion-card id="card1">
@@ -28,35 +21,18 @@
         </ion-buttons>
       </ion-list-header>
 
-      <ion-item id="menu">
+      <ion-list-header id="menu">
+        <ion-buttons>
+          <ion-button>
+            <ion-icon slot="start" name="reader"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+
         <ion-label>
           <h5>삼선짜장, 차돌짬뽕, 새우볶음밥 9000원</h5>
           <h5>삼선짜장 곱빼기, 차돌짬뽕 곱빼기 10500원</h5>
         </ion-label>
-
-        <ion-buttons>
-          <ion-button>
-            <ion-icon slot="end" name="reader"></ion-icon>
-          </ion-button>
-        </ion-buttons>
-      </ion-item>
-
-      <ion-item>
-        <ion-avatar slot="start">
-          <img src="./assets/icon/avatar.png">
-        </ion-avatar>
-
-        <ion-label>
-          <h3>김하늘</h3>
-          <h4>삼선짜장 1개 9000원</h4>
-        </ion-label>
-
-        <ion-buttons>
-          <ion-button>
-            <ion-icon slot="end" name="pencil"></ion-icon>
-          </ion-button>
-        </ion-buttons>
-      </ion-item>
+      </ion-list-header>
 
       <ion-item>
         <ion-avatar slot="start">
@@ -119,6 +95,23 @@
         </ion-avatar>
 
         <ion-label>
+          <h3>김하늘</h3>
+          <h4>삼선짜장 1개 9000원</h4>
+        </ion-label>
+
+        <ion-buttons>
+          <ion-button (click)="goLogin()">
+            <ion-icon slot="end" name="pencil"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </ion-item>
+
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="./assets/icon/avatar.png">
+        </ion-avatar>
+
+        <ion-label>
           <h3>메타몽</h3>
           <h4>차돌짬뽕 1개 9000원</h4>
         </ion-label>
@@ -131,7 +124,7 @@
 
         <ion-label>
           <h3>꼬부기</h3>
-          <h4>차돌짬뽕 1개 9000원</h4>
+          <h4>삼선짜장 1개 9000원</h4>
         </ion-label>
       </ion-item>
     </ion-list>
@@ -149,3 +142,20 @@
     </ion-buttons>
   </ion-card>
 </ion-content>
+<!---->
+
+<!--
+<ion-content>
+  <ion-card>
+    <ion-card-header></ion-card-header>
+      <ion-card-title>Card Title</ion-card-title>
+    <ion-card-content>
+      ㅇㄴ로마ㅗ러ㅗ노아ㅓ로만로
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header></ion-card-header>
+    <ion-card-content></ion-card-content>
+  </ion-card>
+</ion-content>
+-->
