@@ -1,0 +1,7 @@
+{
+  "name": "sngyBab3",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
