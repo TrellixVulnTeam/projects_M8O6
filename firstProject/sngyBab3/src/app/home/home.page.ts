@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { DataService, Message } from '../services/data.service';
 import { Router } from '@angular/router';
 
 @Component({
@@ -9,16 +8,12 @@ import { Router } from '@angular/router';
 })
 
 export class HomePage {
-  constructor(private data: DataService, private router: Router) {}
+  constructor(private router: Router) {}
 
   refresh(ev) {
     setTimeout(() => {
       ev.detail.complete();
     }, 3000);
-  }
-
-  getMessages(): Message[] {
-    return this.data.getMessages();
   }
 
   goLogin(){
