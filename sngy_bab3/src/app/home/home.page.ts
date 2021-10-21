@@ -20,4 +20,8 @@ export class HomePage {
     this.router.navigate(['/result'])
   }
 
+  goLogin(){
+    this.router.navigate(['/login'])
+  }
+
 }
