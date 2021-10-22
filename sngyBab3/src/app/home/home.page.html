@@ -13,7 +13,7 @@
         </ion-chip>
 
         <ion-buttons>
-          <ion-button>
+          <ion-button (click)="goResult()">
             <ion-icon slot="end" name="checkmark-circle"></ion-icon>
           </ion-button>
         </ion-buttons>
@@ -98,7 +98,7 @@
         </ion-label>
 
         <ion-buttons>
-          <ion-button (click)="goLogin()">
+          <ion-button>
             <ion-icon slot="end" name="pencil"></ion-icon>
           </ion-button>
         </ion-buttons>
@@ -156,7 +156,7 @@
     </ion-item>
 
     <ion-buttons>
-      <ion-button>
+      <ion-button (click)="goLogin()">
         <ion-icon slot="end" name="paper-plane"></ion-icon>
       </ion-button>
     </ion-buttons>

@@ -16,9 +16,12 @@ export class HomePage {
     }, 3000);
   }
 
+  goResult(){
+    this.router.navigate(['/result'])
+  }
+
   goLogin(){
     this.router.navigate(['/login'])
   }
-
 
 }
