@@ -13,11 +13,20 @@ ion-content {
 }
 
 ion-card {
+  min-height: 750px;
   margin: 15px;
-  padding-bottom: 10px;
+  margin-bottom: 65px;
   border-radius: 15px;
   overflow: hidden;
   --ion-background-color: white;
+
+  ion-item {
+    margin: 10px;
+  }
+
+  ion-button {
+    padding-bottom: 10px;
+  }
 }
 
 ion-list {
@@ -41,43 +50,21 @@ ion-chip {
   font-size: 12px;
 }
 
-// button 여백 제어
-ion-button {
-  padding-bottom: 10px;
-}
-
 ion-icon {
   color: #002f67;
   font-size: 25px !important;
 }
 
-#card1 {
-  height: 720px;
+ion-footer {
+  position: fixed;
+  bottom: 0;
 }
 
-#card1 ion-item {
-  margin: 10px;
-}
-
-#card1 #menu {
+#menu {
   font-size: 14px;
   align-items: normal;
   margin: 0;
   padding-top: 5px;
-}
-
-#card2 {
-  height: 60px;
-  padding-left: 15px;
-}
-
-#card2 ion-item {
-  width: 310px;
-  float: left;
-}
-
-#card2 ion-button {
-  margin-top: 15px;
 }
 
 #state1 {

@@ -1,5 +1,5 @@
 <ion-content [fullscreen]="true">
-  <ion-card id="card1">
+  <ion-card>
     <ion-list>
       <ion-list-header>
         <h2>오늘의 메뉴</h2>
@@ -21,7 +21,7 @@
 
       <ion-list-header id="menu">
         <ion-buttons>
-          <ion-button>
+          <ion-button (click)="selectInfo()">
             <ion-icon slot="start" name="reader"></ion-icon>
           </ion-button>
         </ion-buttons>
@@ -98,7 +98,7 @@
         </ion-label>
 
         <ion-buttons>
-          <ion-button>
+          <ion-button (click)="updateMenu()">
             <ion-icon slot="end" name="pencil"></ion-icon>
           </ion-button>
         </ion-buttons>
@@ -147,18 +147,19 @@
           <h4>새우볶음밥 1개 9000원</h4>
         </ion-label>
       </ion-item>
+
     </ion-list>
   </ion-card>
 
-  <ion-card id="card2">
+  <ion-footer>
     <ion-item>
       <ion-input clearInput placeholder="메뉴를 입력해주세요."></ion-input>
-    </ion-item>
 
-    <ion-buttons>
-      <ion-button (click)="goLogin()">
-        <ion-icon slot="end" name="paper-plane"></ion-icon>
-      </ion-button>
-    </ion-buttons>
-  </ion-card>
+      <ion-buttons>
+        <ion-button (click)="insertMenu()">
+          <ion-icon slot="end" name="paper-plane"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-item>
+  </ion-footer>
 </ion-content>
