@@ -1,0 +1,23 @@
+
+ion-content {
+//   animation: fadeIn 1s ease-in-out;
+  --ion-background-color: #002f67;
+}
+
+img {
+  width: 71px;
+  margin: 370px 170px;
+}
+
+
+@keyframes fadeOut {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 3;
+        transform: none;
+    }
+}

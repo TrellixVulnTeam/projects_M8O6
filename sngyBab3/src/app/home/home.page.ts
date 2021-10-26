@@ -9,7 +9,7 @@ import { AlertController } from '@ionic/angular';
 })
 
 export class HomePage {
-  constructor(private router: Router, public alertController: AlertController) {}
+  constructor(private router: Router, public alertCtrl: AlertController) {}
 
   refresh(ev) {
     setTimeout(() => {
@@ -17,16 +17,16 @@ export class HomePage {
     }, 3000);
   }
 
-  goResult(){
+  goResult() {
     this.router.navigate(['/result'])
   }
 
-  goLogin(){
+  goLogin() {
     this.router.navigate(['/login'])
   }
 
   async insertInfo() {
-    const alert = await this.alertController.create({
+    const alert = await this.alertCtrl.create({
       cssClass: 'insertInfo',
       header: '오늘의 메뉴 등록하기',
       subHeader: '메뉴에 대한 정보를 입력해주세요.',
@@ -72,7 +72,7 @@ export class HomePage {
   }
 
   async insertMenu() {
-    const alert = await this.alertController.create({
+    const alert = await this.alertCtrl.create({
       cssClass: 'upsertMenu',
       header: '내 메뉴 입력하기',
       subHeader: '메뉴의 수량과 가격을 입력해주세요.',
@@ -112,7 +112,7 @@ export class HomePage {
   }
 
   async updateMenu() {
-    const alert = await this.alertController.create({
+    const alert = await this.alertCtrl.create({
       cssClass: 'upsertMenu',
       header: '내 메뉴 변경하기',
       subHeader: '변경할 메뉴의 정보를 입력해주세요.',
@@ -158,24 +158,24 @@ export class HomePage {
   }
 
   async selectInfo() {
-    const alert = await this.alertController.create({
+    const alert = await this.alertCtrl.create({
       cssClass: 'insertInfo',
-      header: '오늘의 메뉴예요!',
-      subHeader: '메뉴를 선택할 때 참고하면 좋은 정보들이에요.',
-      message: '음식점의 링크예요',
+      header: '오늘의 메뉴 정보 보기',
+      subHeader: '메뉴를 자세히 보려면 링크를 클릭하세요.',
+      message: 'https://www.sngy.io',
       buttons: [
         {
-          text: '취소하기',
+          text: '변경하기',
           cssClass: 'cancel',
           handler: () => {
-            console.log('insertInfo canceled');
+            console.log('go updateInfo');
           }
         },
         {
-          text: '확인하기',
+          text: '돌아가기',
           cssClass: 'confirm',
           handler: () => {
-            console.log('insertInfo completed');
+            console.log('go back');
           }
         }
       ]

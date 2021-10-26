@@ -10,9 +10,9 @@ import { Router } from '@angular/router';
 export class AppComponent {
 //   let isLogin = false;
   constructor(private router: Router) {
-//     if (isLogin === false) {
+//     if (isLogin == false) {
 //       isLogin = true;
-//       router.navigate(['/login']);
+      router.navigate(['/login']);
 //     }
 //     this.init();
   }
