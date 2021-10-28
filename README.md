@@ -5,7 +5,7 @@
     - Progressive Web Application
     - Only Synergy
 - Library & Frameworks
-    - AngularJs
+    - AngularJS
     - Ionic 5
     - Capacitor 3
 - Development Environment
