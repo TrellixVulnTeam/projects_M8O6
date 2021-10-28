@@ -5,7 +5,8 @@
     - Progressive Web Application
     - Only Synergy
 - Library & Frameworks
-    - ionic 5
-    - capacitor 3
+    - AngularJS
+    - Ionic 5
+    - Capacitor 3
 - Development Environment
     - IntelliJ IDEA Edu
